@@ -115,6 +115,23 @@ document.getElementById("average").innerHTML="Average per month:$"+finances_aver
 
 
 
+//lets find decreased change-----------------------------------------------------
+let greatest_dec = 0;
+let greatest_dec_by_month = "";
+
+
+for (let i1 = 0; i1 < finances.length - 1; i1++) {
+let temp_val = 0;
+let col = i1 + 1;
+
+temp_val = finances[col][1] - finances[i1][1];
+
+if (temp_val < greatest_dec) {
+  greatest_dec = temp_val;
+  greatest_dec_by_month= finances[col][0];
+}
+}
+
 
 
 
