@@ -101,16 +101,30 @@ var financesArraytest = finances.map((e2) => e2[1]);
 var total_value = financesArraytest.reduce(
   (acc_Value, cur_Value) => acc_Value + cur_Value,
   0);
-console.log("total profit over entire months: $",total_value);
-document.getElementById("profit").innerHTML="Total profit over entire months: $"+total_value;
+console.log("Total : $",total_value);
+document.getElementById("profit").innerHTML="Total : $"+total_value;
 
 
   
 //average-------------------------------------------------------------
-var finances_average = total_value / (finances.length-1); //(Total/(Number of months - 1))
-console.log("Average per month:", finances_average.toFixed(2));
-document.getElementById("average").innerHTML="Average per month:$"+finances_average.toFixed(2);
+// var finances_average = total_value / (finances.length-1); //(Total/(Number of months - 1))
+// console.log("Average per month:", finances_average.toFixed(2));
+// document.getElementById("average").innerHTML="Average per month:$"+finances_average.toFixed(2);
 
+//finding average-------------------------------------
+
+let c=0;
+let to=0;
+
+for(let m=0;m<finances.length;m++){
+  for(let n=0;n<finances[m].length;n++){
+    to=finances[m][n];
+    c++;
+  }
+}
+const av1=to / c;
+console.log("Average change : "+av1.toFixed(2));
+document.getElementById("average").innerHTML="Average change:$"+av1.toFixed(2);
 
 
 
@@ -197,16 +211,12 @@ var max=finances[0][1],index_max="";
       }
   }
 
-  console.log("Greatest increase profit/loss value: "+index_max+": $"+greatest_inc);
-  console.log("Greatest decrease profit/loss value:  "+index_min+": $"+greatest_dec);
+  console.log("Greatest increase in profit/loss : "+index_max+": $"+greatest_inc);
+  console.log("Greatest decrease in profit/loss :  "+index_min+": $"+greatest_dec);
 
   
-  document.getElementById("G_increase").innerHTML="Greatest increase profit/loss value: "+index_max+": $"+greatest_inc;
-  document.getElementById("G_decrease").innerHTML="Greatest decrease profit/loss value: : "+index_min+": $"+greatest_dec;
-
-
-
-
+  document.getElementById("G_increase").innerHTML="Greatest increase in profit/loss : "+index_max+": $"+greatest_inc;
+  document.getElementById("G_decrease").innerHTML="Greatest decrease in profit/loss : : "+index_min+": $"+greatest_dec;
 
 
 
