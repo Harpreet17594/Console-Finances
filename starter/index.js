@@ -87,44 +87,84 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+//total months---------------------------------------------------------------------------
+console.log("Financial Analysis:");
+
+console.log("--------------------------");
+console.log("Total months:", finances.length);
+document.getElementById("length").innerHTML="Total months: "+finances.length;
 
 
-// const earningsArray = finances.map((el) => el[1]);
+//profit over entire months---------------------------------------------------------------
 
-// const profitMonths = finances.filter((el) => el[1] > 0);
-// const salesOnProfitMonths = profitMonths
-//   .map((el) => el[1])
-//   .reduce((accVal, curVal) => accVal + curVal, 0);
+var financesArraytest = finances.map((e2) => e2[1]);
+var total_value = financesArraytest.reduce(
+  (acc_Value, cur_Value) => acc_Value + cur_Value,
+  0);
+console.log("total profit over entire months: $",total_value);
+document.getElementById("profit").innerHTML="Total profit over entire months: $"+total_value;
 
-// const avgOfProfitAndLoss =
-//   earningsArray.reduce((accVal, curVal) => accVal + curVal, 0) / data.length; // get the average of all total and losses
 
-// const maxMonth = {
-//   monthName: '',
-//   profit: 0,
-// };
 
-// const minMonth = {
-//   monthName: '',
-//   profit: 0,
-// };
 
-// data.forEach((month) => {
-//   if (month[1] > maxMonth.profit) {
-//     maxMonth.monthName = month[0];
-//     maxMonth.profit = month[1];
-//   }
 
-//   if (month[1] < minMonth.profit) {
-//     minMonth.monthName = month[0];
-//     minMonth.profit = month[1];
-//   }
 
-//   return { maxMonth, minMonth };
-// });
 
-// console.log('Total sale of profit months: ', salesOnProfitMonths);
-// console.log('Total average : ', avgOfProfitAndLoss);
-// console.log('The month with max profit is : ', maxMonth);
-// console.log('The month with min profit is : ', minMonth);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

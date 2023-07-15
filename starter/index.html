@@ -4,50 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- it will remove the favicon error in console while executing javascript code -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  
   <title>M4 Challenge</title>
 </head>
 <body>
-  <h1 style="text-align:center;">Open the Console to See the Magic ✨! </h1>
-  <form>
-    <button onclick="Calculate()">Calculate</button>
-  </form>
-  <h2 class="percentage"></h2>
-  <p id="demo1"></p>
-  <p id="demo2"></p>
-  <!-- <script src="index.js"></script> -->
-  <script>
-
-
-const data = [['Jan-2019', 325678], ['feb-2019', 456789], ['Mar-2019',-12890], ['Dec-2021', 987460]];
-var total=0,sumChange=0,average;
-let result = data.reduce((a, b, i) => {
-    let d = (i > 1) ? a : {total: a[1], average: a[1], sumChange: 0, lastMonth: a[1], increase: a, decrease: a},
-        change = b[1] - d.lastMonth
-    
-    d.total += b[1]
-    d.sumChange += change
-    d.lastMonth = b[1]
-    d.average = d.sumChange / i
-    d.increase = (d.increase[1] > change) ? d.increase : [b[0], change]
-    d.decrease = (d.decrease[1] < change) ? d.decrease : [b[0], change]
-    return d
-})
-
-console.log(result) // Return the full object
-console.log(result.total)  
-document.getElementById("demo1").innerHTML = sumChange;
-document.getElementById("demo2").innerHTML = result.total;
+<p> Financial Analysis</p>
+<p>---------------------------------------</p>
+<p id="length"></p>
+<p id="profit"></p>
+<p id="average"></p>
+<p id="G_increase"></p>
+<p id="G_decrease"></p>
 
 
 
-
-
-
-
-</script>
-
-
-
-
+<script src="index.js"></script>
 </body>
 </html>
