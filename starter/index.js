@@ -105,7 +105,7 @@ console.log("total profit over entire months: $",total_value);
 document.getElementById("profit").innerHTML="Total profit over entire months: $"+total_value;
 
 
-
+  
 
 
 
