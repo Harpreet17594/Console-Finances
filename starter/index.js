@@ -134,6 +134,25 @@ if (temp_val < greatest_dec) {
 
 
 
+//lets find increased change------------------------------------------------------
+let greatest_inc = 0;
+let greatest_inc_by_month = "";
+
+for (let i = 0; i < finances.length - 1; i++) {
+let temp_val2 = 0;
+let j = i + 1;
+
+temp_val2 = finances[j][1] - finances[i][1];
+
+if (temp_val2 > greatest_inc) {
+  greatest_inc = temp_val2;
+  greatest_inc_by_month = finances[j][0];
+}
+}
+
+
+
+
 
 
 
