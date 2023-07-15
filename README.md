@@ -26,19 +26,7 @@ Your task is to write JavaScript code that analyzes the records to calculate eac
 
 * The greatest decrease in Profit/Losses (date and amount) over the entire period.
 
-When you open your code in the browser your resulting analysis should look similar to the following:
 
-  ```text
-  Financial Analysis 
-  ----------------
-  Total Months: 86
-  Total: $38382578
-  Average Change: -2315.12
-  Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-  Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
-
-Your final code should print the analysis to the console.
 
 **Hints:**
 
@@ -60,6 +48,8 @@ Your final code should print the analysis to the console.
 
   Link to deployed application
   
+  https://harpreet17594.github.io/Console-Finances/
+
 
 ## Languages used
   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
