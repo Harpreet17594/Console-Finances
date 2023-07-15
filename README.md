@@ -48,4 +48,42 @@ Your final code should print the analysis to the console.
 
 * How do you only print to the nearest 100th in JavaScript?
 
+## Screenshots
 
+  ![image](../Console-Finances/starter/images/Screenshot%20output.png)
+
+## Links
+
+  Link to github repository
+
+  https://github.com/Harpreet17594/Console-Finances
+
+  Link to deployed application
+  
+
+## Languages used
+  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+
+## Browser support
+
+  ![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)
+  ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+  ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+
+![IE](https://img.shields.io/badge/Internet%20Explorer-0076D6?style=for-the-badge&logo=Internet%20Explorer&logoColor=white)
+
+![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white)
+
+
+
+## Installation
+  No installation required.
+## Contributor
+  One contributors.
+## License
+  No license
+## Copyright
+  &copy; Copyright
