@@ -154,6 +154,60 @@ if (temp_val2 > greatest_inc) {
 
 
 
+//finding months of inc/dec value---------------------------------------
+var tempObject=0,total_months=0,total_loss=0,total_loss_months=0;
+var min = finances[0][1],index_min="",greatest_d=0;
+var max=finances[0][1],index_max="";
+
+    for (let i = 0; i < finances.length; i++)
+     {
+      var innerArrayLength = finances[i].length;
+      var temp_val=0;
+    
+        for (let j = 0; j < innerArrayLength; j++) 
+        {
+          // console.log('[' + i + ',' + j + '] = ' + finances[i][j]);
+          
+          if(finances[i][j]>0)
+          {
+            // console.log("positive value"+finances[i][j]);
+            tempObject=tempObject+finances[i][j];
+            total_months++;
+           
+            //find max profit value
+            if(finances[i][j]>=max)
+            {
+              max = finances[i][j];
+              index_max = finances[i][j-1];
+            }
+        }
+          if(finances[i][j]<0){
+            total_loss=total_loss+finances[i][j];
+            total_loss_months++;
+            //find max profit value
+            if(finances[i][j]<min)
+            {
+              min = finances[i][j];
+              index_min = finances[i][j-1];
+
+            }
+          
+        } 
+
+      }
+  }
+
+  console.log("Greatest increase profit/loss value: "+index_max+": $"+greatest_inc);
+  console.log("Greatest decrease profit/loss value:  "+index_min+": $"+greatest_dec);
+
+  
+  document.getElementById("G_increase").innerHTML="Greatest increase profit/loss value: "+index_max+": $"+greatest_inc;
+  document.getElementById("G_decrease").innerHTML="Greatest decrease profit/loss value: : "+index_min+": $"+greatest_dec;
+
+
+
+
+
 
 
 
