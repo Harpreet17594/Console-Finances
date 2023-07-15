@@ -106,6 +106,11 @@ document.getElementById("profit").innerHTML="Total profit over entire months: $"
 
 
   
+//average-------------------------------------------------------------
+var finances_average = total_value / (finances.length-1); //(Total/(Number of months - 1))
+console.log("Average per month:", finances_average.toFixed(2));
+document.getElementById("average").innerHTML="Average per month:$"+finances_average.toFixed(2);
+
 
 
 
